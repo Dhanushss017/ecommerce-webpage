@@ -1,0 +1,1936 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muse Mind </title>
+  <link rel="shortcut icon" type="image/svg" href="./images/logo-i.svg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/helper.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/mediaquery.css">
+
+  <!-- owl carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- owl carousel-->
+
+  <!--font awesome  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- font awesome -->
+
+  <!-- aos animation  -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <!-- aos animation -->
+</head>
+
+<body>
+  <!-- navbar desktop starts -->
+  <section class="desktop-navbar d-none d-lg-block">
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container max_width">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo-i.svg" alt="logo" class="img-fluid">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav navbar_show fs-15 ms-lg-4 me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item dropdown ">
+              <a class="nav-link dropdown-toggle text_black" href="#" id="navbarDropdown" role="button"
+                aria-expanded="false">
+                Categories
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Services</a></li>
+                <li><a class="dropdown-item" href="#">Know more</a></li>
+              </ul>
+            </li>
+            <li class="nav-item  ms-lg-4">
+              <a class="nav-link text_black" aria-current="page" href="#">Deals</a>
+            </li>
+            <li class="nav-item  ms-lg-4">
+              <a class="nav-link text_black" href="#">What's New</a>
+            </li>
+            <li class="nav-item  ms-lg-4">
+              <a class="nav-link text_black" href="#">Delivery</a>
+            </li>
+
+          </ul>
+          <form class="d-flex me-4">
+            <input class="form-control me-2 fs-15 search_input shadow-none" type="search" placeholder="Search Product"
+              aria-label="Search">
+
+            <button class="btn shadow-none p-0" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </form>
+          <a href="" class="btn me-md-3 me-lg-4">
+            <i class="fa-regular fa-user me-2"></i><span class=" fs-14 p-0"> Account</span></a>
+          <i class="fa-solid fa-cart-shopping"></i><span class="btn fs-14"> Cart</span>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- navbar desktop ends -->
+  <!-- navbar mobile -->
+  <section class="d-lg-none">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center p-2">
+        <a class="navbar-brand" href="#">
+          <img src="images/logo-i.svg" alt="logo" class="img-fluid">
+        </a>
+        <a class="btn btn_success rounded shadow-none" data-bs-toggle="offcanvas" href="#mobile-navbar" role="button"
+          aria-controls="mobile-navbar">
+          <span class="fa fa-bars fa-lg text-white"></span>
+        </a>
+      </div>
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="mobile-navbar" aria-labelledby="mobile-navbarLabel">
+        <div class="offcanvas-header">
+          <a class="navbar-brand" href="#">
+            <img src="images/logo-i.svg" alt="logo" class="img-fluid">
+          </a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body py-0">
+          <ul class="dropdown mt-3 list-unstyled">
+            <button class="btn dropdown-toggle ps-0 shadow-none" type="button" data-bs-toggle="dropdown">
+              Categories
+            </button>
+            <ul class="dropdown-menu fs-15">
+              <li><a class="dropdown-item text_black" href="#">Services</a></li>
+              <li><a class="dropdown-item text_black" href="#">Know more</a></li>
+            </ul>
+            <li class="nav-item fs-15">
+              <a class="nav-link text_black ps-0" aria-current="page" href="#">Deals</a>
+            </li>
+            <li class="nav-item fs-15">
+              <a class="nav-link text_black ps-0" href="#">What's New</a>
+            </li>
+            <li class="nav-item fs-15">
+              <a class="nav-link text_black ps-0" href="#">Delivery</a>
+            </li>
+          </ul>
+          <a href="" class="btn px-0 text_darkgreen fw-600 ">
+            <i class="fa-regular fa-user me-2 "></i><span class=" fs-15 p-0"> Login</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- navbar mobile -->
+  <!-- banner starts -->
+  <section>
+    <div class="container-fluid p-0">
+      <img src="images/banner-d.jpg" class="img-fluid w-100 position-relative" alt="banner">
+      <div data-aos="fade-up" data-aos-duration="2000">
+        <div class="banner_text">
+          <h1 class="fs-40 fw-600 mb-md-3 text_darkgreen">Vaccination and <br>Save Your Life</h1>
+          <p class="fs-15  mb-3 d-none d-md-block">Lorem ipsum dolor sit amet. Et
+            voluptatem<br>
+            officiis
+            id molestiae quaerat aut enim!</p>
+          <button class="btn btn_success fs-12 text-white px-md-3">Learn More</button>
+        </div>
+      </div>
+    </div>
+
+  </section>
+  <!-- banner ends -->
+  <section class="pt-5 mt-3">
+    <div class="container">
+      <h2 class="fs-22 mb-3 text_black fw-600">Shop Our Top Categories</h2>
+      <div class="row mt-4 mb-5 overflow-auto flex-nowrap scrollbar_none">
+        <div class="col-6 col-lg-2 col-md-3">
+          <div class="card border-0">
+
+            <div class="card-body p-0">
+              <h3 class="fs-22 text_green text-center fw-600 top_categories">Furniture</h3>
+              <img src="images/categories1.jpg" class="img-fluid w-100 rounded" alt="">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2 col-md-3">
+          <div class="card border-0">
+
+            <div class="card-body p-0">
+              <h3 class="fs-22 text_green text-center fw-600 top_categories">Handbags</h3>
+              <img src="images/categories2.jpg" class="img-fluid w-100 rounded" alt="">
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-6 col-lg-2 col-md-3">
+          <div class="card border-0">
+
+            <div class="card-body p-0">
+              <h3 class="fs-22 text_green text-center fw-600 top_categories">Colours</h3>
+              <img src="images/categories3.jpg" class="img-fluid w-100 rounded" alt="">
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-6 col-lg-2 col-md-3">
+          <div class="card border-0">
+
+            <div class="card-body p-0">
+              <h3 class="fs-22 text_green text-center fw-600 top_categories">Capsules</h3>
+              <img src="images/categories4.jpg" class="img-fluid w-100 rounded" alt="">
+
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 col-md-3">
+          <div class="card border-0">
+
+            <div class="card-body p-0">
+              <h3 class="fs-22 text_green text-center fw-600 top_categories">Handbags</h3>
+              <img src="images/categories2.jpg" class="img-fluid w-100 rounded" alt="">
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-6 col-lg-2 col-md-3">
+          <div class="card border-0">
+
+            <div class="card-body p-0">
+              <h3 class="fs-22 text_green text-center fw-600 top_categories">Colours</h3>
+              <img src="images/categories3.jpg" class="img-fluid w-100 rounded" alt="">
+
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-6 col-lg-2 col-md-3">
+          <div class="card border-0">
+
+            <div class="card-body p-0">
+              <h3 class="fs-22 text_green text-center fw-600 top_categories">Capsules</h3>
+              <img src="images/categories4.jpg" class="img-fluid w-100 rounded" alt="">
+
+            </div>
+          </div>
+        </div>
+        <div class="col-6 col-lg-2 col-md-3">
+          <div class="card border-0">
+
+            <div class="card-body p-0">
+              <h3 class="fs-22 text_green text-center fw-600 top_categories">Furniture</h3>
+              <img src="images/categories1.jpg" class="img-fluid w-100 rounded" alt="">
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-6 col-lg-2 col-md-3">
+          <div class="card border-0">
+
+            <div class="card-body p-0">
+              <h3 class="fs-22 text_green text-center fw-600 top_categories">Handbags</h3>
+              <img src="images/categories2.jpg" class="img-fluid w-100 rounded" alt="">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section class="pt-5 mt-3">
+  <section class="pt-4 mt-3 mb-3">
+    <div class="container">
+      <h2 class="fs-20 mb-4 text_black fw-600">Today's Best deals for You</h2>
+      <div class="row overflow-auto flex-nowrap mb-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/heels.png" alt="Hells" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Heels</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/shoes.png" alt="Shoes" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Shoes</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/jewels.png" alt="Jewels" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Jewels</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/chain.png" alt="Chain" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Chain</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/heels.png" alt="Hells" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Heels</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/shoes.png" alt="Shoes" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Shoes</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/jewels.png" alt="Jewels" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Jewels</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/chain.png" alt="Chain" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Chain</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="pt-4 mt-5">
+    <div class="container">
+      <h2 class="fs-22 mb-4 text_black fw-600">Choose By Brand</h2>
+      <div class="grid_column mb-4">
+        <div class="mb-3 choose_brand rounded">
+          <div class="d-flex justify-content-center align-items-center gap-2 gap-md-4 px-3 px-lg-0 py-3">
+            <div>
+              <i class="fa-solid fa-cart-shopping icons"></i>
+            </div>
+            <div class="">
+              <h3 class="fs-16 text_black fw-600">Staples</h3>
+              <p class="fs-12 text_black text-md-nowrap mb-0">Delivery Within 24 hours</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="mb-3 choose_brand rounded">
+          <div class="d-flex justify-content-center align-items-center gap-2 gap-md-4 px-3 px-lg-0 py-3">
+            <div>
+              <i class="fa-solid fa-truck-fast icons"></i>
+            </div>
+            <div class="">
+              <h3 class="fs-16 text_black fw-600">Sprouts</h3>
+              <p class="fs-12 text_black text-md-nowrap mb-0">Delivery Within 24 hours</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="mb-3 choose_brand rounded">
+          <div class="d-flex justify-content-center align-items-center gap-2 gap-md-4 px-3 px-lg-0 py-3">
+            <div>
+              <i class="fa-brands fa-shopify icons"></i>
+            </div>
+            <div class="">
+              <h3 class="fs-16 text_black fw-600">Grocery</h3>
+              <p class="fs-12 text_black text-md-nowrap mb-0">Delivery Within 24 hours</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="mb-3 choose_brand rounded">
+          <div class="d-flex justify-content-center align-items-center gap-2 gap-md-4 px-3 px-lg-0 py-3">
+            <div>
+              <i class="fa-solid fa-cart-shopping icons"></i>
+            </div>
+            <div class="">
+              <h3 class="fs-16 text_black fw-600">Medicals</h3>
+              <p class="fs-12 text_black text-md-nowrap mb-0">Delivery Within 24 hours</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="mb-3 choose_brand rounded">
+          <div class="d-flex justify-content-center align-items-center gap-2 gap-md-4 px-3 px-lg-0 py-3">
+            <div>
+              <i class="fa-solid fa-truck-fast icons"></i>
+            </div>
+            <div class="">
+              <h3 class="fs-16 text_black fw-600">Sprouts</h3>
+              <p class="fs-12 text_black text-md-nowrap mb-0">Delivery Within 24 hours</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="mb-3 choose_brand rounded">
+          <div class="d-flex justify-content-center align-items-center gap-2 gap-md-4 px-3 px-lg-0 py-3">
+            <div>
+              <i class="fa-solid fa-cart-shopping icons"></i>
+            </div>
+            <div class="">
+              <h3 class="fs-16 text_black fw-600">Medicals</h3>
+              <p class="fs-12 text_black text-md-nowrap mb-0">Delivery Within 24 hours</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="mb-3 choose_brand rounded">
+          <div class="d-flex justify-content-center align-items-center gap-2 gap-md-4 px-3 px-lg-0 py-3">
+            <div>
+              <i class="fa-solid fa-truck-fast icons"></i>
+            </div>
+            <div class="">
+              <h3 class="fs-16 text_black fw-600">Sprouts</h3>
+              <p class="fs-12 text_black text-md-nowrap mb-0">Delivery Within 24 hours</p>
+            </div>
+          </div>
+
+        </div>
+        <div class="mb-3 choose_brand rounded">
+          <div class="d-flex justify-content-center align-items-center gap-2 gap-md-4 px-3 px-lg-0 py-3">
+            <div>
+              <i class="fa-brands fa-shopify icons"></i>
+            </div>
+            <div class="">
+              <h3 class="fs-16 text_black fw-600">Grocery</h3>
+              <p class="fs-12 text_black text-md-nowrap mb-0">Delivery Within 24 hours</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="mt-5">
+    <div class="container">
+      <h2 class="fs-22 mb-4 text_black fw-600">Get Upto 70% Off</h2>
+      <div class=" owl-carousel owl-theme best-selling skipnext-buttons mt-3 mb-4">
+        <div class="item mb-3">
+          <div class="card  border-0 h-100">
+            <div class="card-body p-4 pb-2 bg_lightblue rounded-top">
+              <div class="">
+                <h2 class="fs-18 mb-0 text_black fw-600">Save</h2>
+                <i class="fa-solid text_lightblue fa-dollar-sign fs-28"></i>
+                <span class="fs-40 text_lightblue fw-600 align-middle">100</span>
+                <p class="fs-13 mb-0 text_black mb-3"> Explore Our Furniture and Home furnishing range</p>
+              </div>
+
+            </div>
+            <div class="zoom-img">
+              <img src="images/calling-img.jpg" class="img-fluid rounded-bottom" alt="Frequently asked questions">
+
+            </div>
+
+          </div>
+        </div>
+        <div class="item mb-3">
+          <div class="card border-0 h-100">
+            <div class="card-body pb-2 p-4 bg_lightyellow rounded-top">
+              <div class="">
+                <h2 class="fs-18 mb-0 text_black fw-600">Save</h2>
+                <i class="fa-solid text_lightyellow fa-dollar-sign fs-28"></i>
+                <span class="fs-40 text_lightyellow fw-600 align-middle">100</span>
+                <p class="fs-13 mb-0 text_black mb-3"> Explore Our Furniture and Home furnishing range</p>
+              </div>
+
+            </div>
+            <div class="zoom-img">
+              <img src="images/time-delivery.jpg" class="img-fluid  rounded-bottom" alt="Online payment">
+            </div>
+          </div>
+
+        </div>
+        <div class="item mb-3">
+          <div class="card border-0 h-100">
+            <div class="card-body pb-2 p-4 bg_lightblue rounded-top">
+              <div class="">
+                <h2 class="fs-18 mb-0 text_black fw-600">Save</h2>
+                <i class="fa-solid text_lightblue fa-dollar-sign fs-28"></i>
+                <span class="fs-40 text_lightblue fw-600 align-middle">100</span>
+                <p class="fs-13 mb-0 text_black mb-3"> Explore Our Furniture and Home furnishing range</p>
+              </div>
+
+            </div>
+            <div class="zoom-img">
+              <img src="images/payment.jpg" class="img-fluid  rounded-bottom" alt="On time Delivery">
+            </div>
+          </div>
+
+        </div>
+        <div class="item mb-3">
+          <div class="card border-0 h-100">
+            <div class="card-body pb-2 p-4 bg_lightyellow  rounded-top">
+              <div class="">
+                <h2 class="fs-18 mb-0 text_black fw-600">Save</h2>
+                <i class="fa-solid text_lightyellow fa-dollar-sign fs-28"></i>
+                <span class="fs-40 text_lightyellow fw-600 align-middle">100</span>
+                <p class="fs-13 mb-0 text_black mb-3"> Explore Our Furniture and Home furnishing range</p>
+              </div>
+
+            </div>
+            <div class="zoom-img">
+              <img src="images/time-delivery.jpg" class="img-fluid  rounded-bottom" alt="Online payment">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mt-5">
+    <div class="container">
+      <h2 class="fs-20 mb-4 text_black fw-600">Weekly Popular Products</h2>
+      <div class="row overflow-auto flex-nowrap mb-3">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/heels.png" alt="Hells" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Heels</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/shoes.png" alt="Shoes" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Shoes</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/jewels.png" alt="Jewels" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Jewels</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/chain.png" alt="Chain" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Chain</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/heels.png" alt="Hells" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Heels</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/shoes.png" alt="Shoes" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Shoes</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/jewels.png" alt="Jewels" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Jewels</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/chain.png" alt="Chain" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Chain</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- cash back section -->
+  <section class="mt-5">
+    <div class="container-fluid p-0">
+      <div class="card border-0 cash-back-text bg_darkgreen rounded-0 p-3 p-md-3 p-lg-4">
+        <div class="card-body">
+          <div class="">
+            <h2 class="fs-40 text-white fw-600">Get 5% Cash <br>back
+              on $220</h2>
+            <p class="fs-13 mt-2 text-white opacity-1">Shopping is a bit Relaxing hobby for me,<br>which is troubling
+              sometimes</p>
+            <button class="btn btn_buy fs-13 opacity-1 mb-3">Learn more</button>
+          </div>
+        </div>
+      </div>
+      <div class="">
+        <img src="images/form-banner.jpg" alt="cash back image" class="img-fluid w-100 d-none d-md-block">
+      </div>
+    </div>
+  </section>
+  <!-- cash back section ends-->
+
+  <!-- Best deals tabs -->
+  <section class="mt-5">
+    <div class="container">
+      <h2 class="fs-22 mb-4 text_black fw-600">Todays Best Deals For You!</h2>
+      <ul class="nav nav-pills nav_tabs mb-4 d-flex overflow-auto flex-nowrap" id="pills-tab" role="tablist">
+        <li class="nav-item me-3 me-lg-2" role="presentation">
+          <button class="nav-link text_black  fs-13 active" id="pills-gadgets-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-gadgets" type="button" role="tab" aria-controls="pills-gadgets"
+            aria-selected="true">Gadgets</button>
+        </li>
+        <li class="nav-item me-3 me-lg-2" role="presentation">
+          <button class="nav-link text_black   fs-13" id="pills-fashion-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-fashion" type="button" role="tab" aria-controls="pills-fashion"
+            aria-selected="false">Fashion</button>
+        </li>
+        <li class="nav-item me-3 me-lg-2" role="presentation">
+          <button class="nav-link text_black   fs-13" id="pills-toys-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-toys" type="button" role="tab" aria-controls="pills-toys"
+            aria-selected="false">Toys</button>
+        </li>
+        <li class="nav-item me-3 me-lg-2" role="presentation">
+          <button class="nav-link text_black  fs-13" id="pills-education-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-education" type="button" role="tab" aria-controls="pills-education"
+            aria-selected="true">Education</button>
+        </li>
+        <li class="nav-item me-3 me-lg-2" role="presentation">
+          <button class="nav-link text_black   fs-13" id="pills-beauty-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-beauty" type="button" role="tab" aria-controls="pills-beauty"
+            aria-selected="false">Beauty</button>
+        </li>
+        <li class="nav-item me-3 me-lg-2" role="presentation">
+          <button class="nav-link text_black   fs-13" id="pills-salon-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-salon" type="button" role="tab" aria-controls="pills-salon"
+            aria-selected="false">Salon</button>
+        </li>
+        <li class="nav-item me-3 me-lg-2" role="presentation">
+          <button class="nav-link text_black  fs-13" id="pills-fitness-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-fitness" type="button" role="tab" aria-controls="pills-fitness"
+            aria-selected="true">Fitness</button>
+        </li>
+        <li class="nav-item me-3 me-lg-2" role="presentation">
+          <button class="nav-link text_black   fs-13" id="pills-furniture-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-furniture" type="button" role="tab" aria-controls="pills-furniture"
+            aria-selected="false">Furniture</button>
+        </li>
+        <li class="nav-item me-3 me-lg-2" role="presentation">
+          <button class="nav-link text_black   fs-13" id="pills-travel-tab" data-bs-toggle="pill"
+            data-bs-target="#pills-travel" type="button" role="tab" aria-controls="pills-travel"
+            aria-selected="false">Travel</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-gadgets" role="tabpanel" aria-labelledby="pills-gadgets-tab">
+          <div class="row mb-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+              <div class="card  h-100 border-0">
+                <div class="card-body p-0">
+                  <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+                  <div class="text-center deals_latest rounded">
+                    <img src="images/heels.png" alt="Hells" class="on_hover img-fluid rounded">
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Heels</h3>
+                    <span class="fs-18 fw-600  text_black mt-3"><i
+                        class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+                  </div>
+
+                  <p class="text_black fs-12 mb-0">Organic and Certified</p>
+                  <span class="fs-12">
+                    <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                    (121)</span>
+                  <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                    Cart</button>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+              <div class="card  h-100 border-0">
+                <div class="card-body p-0">
+                  <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+                  <div class="text-center deals_latest rounded">
+                    <img src="images/shoes.png" alt="Shoes" class="on_hover img-fluid rounded">
+
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Shoes</h3>
+                    <span class="fs-18 fw-600  text_black mt-3"><i
+                        class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+                  </div>
+
+                  <p class="text_black fs-12 mb-0">Organic and Certified</p>
+                  <span class="fs-12">
+                    <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                    (121)</span>
+                  <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                    Cart</button>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+              <div class="card  h-100 border-0">
+                <div class="card-body p-0">
+                  <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+                  <div class="text-center deals_latest rounded">
+                    <img src="images/jewels.png" alt="Jewels" class="on_hover img-fluid rounded">
+
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Jewels</h3>
+                    <span class="fs-18 fw-600  text_black mt-3"><i
+                        class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+                  </div>
+
+                  <p class="text_black fs-12 mb-0">Organic and Certified</p>
+                  <span class="fs-12">
+                    <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                    (121)</span>
+                  <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                    Cart</button>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+              <div class="card  h-100 border-0">
+                <div class="card-body p-0">
+                  <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+                  <div class="text-center deals_latest rounded">
+                    <img src="images/chain.png" alt="Chain" class="on_hover img-fluid rounded">
+
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Chain</h3>
+                    <span class="fs-18 fw-600  text_black mt-3"><i
+                        class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+                  </div>
+
+                  <p class="text_black fs-12 mb-0">Organic and Certified</p>
+                  <span class="fs-12">
+                    <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                    (121)</span>
+                  <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                    Cart</button>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+              <div class="card  h-100 border-0">
+                <div class="card-body p-0">
+                  <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+                  <div class="text-center deals_latest rounded">
+                    <img src="images/heels.png" alt="Hells" class="on_hover img-fluid rounded">
+
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Heels</h3>
+                    <span class="fs-18 fw-600  text_black mt-3"><i
+                        class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+                  </div>
+
+                  <p class="text_black fs-12 mb-0">Organic and Certified</p>
+                  <span class="fs-12">
+                    <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                    (121)</span>
+                  <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                    Cart</button>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+              <div class="card  h-100 border-0">
+                <div class="card-body p-0">
+                  <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+                  <div class="text-center deals_latest rounded">
+                    <img src="images/shoes.png" alt="Shoes" class="on_hover img-fluid rounded">
+
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Shoes</h3>
+                    <span class="fs-18 fw-600  text_black mt-3"><i
+                        class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+                  </div>
+
+                  <p class="text_black fs-12 mb-0">Organic and Certified</p>
+                  <span class="fs-12">
+                    <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                    (121)</span>
+                  <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                    Cart</button>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+              <div class="card  h-100 border-0">
+                <div class="card-body p-0">
+                  <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+                  <div class="text-center deals_latest rounded">
+                    <img src="images/jewels.png" alt="Jewels" class="on_hover img-fluid rounded">
+
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Jewels</h3>
+                    <span class="fs-18 fw-600  text_black mt-3"><i
+                        class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+                  </div>
+
+                  <p class="text_black fs-12 mb-0">Organic and Certified</p>
+                  <span class="fs-12">
+                    <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                    (121)</span>
+                  <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                    Cart</button>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+              <div class="card  h-100 border-0">
+                <div class="card-body p-0">
+                  <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+                  <div class="text-center deals_latest rounded">
+                    <img src="images/chain.png" alt="Chain" class="on_hover img-fluid rounded">
+
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Chain</h3>
+                    <span class="fs-18 fw-600  text_black mt-3"><i
+                        class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+                  </div>
+
+                  <p class="text_black fs-12 mb-0">Organic and Certified</p>
+                  <span class="fs-12">
+                    <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                    (121)</span>
+                  <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                    Cart</button>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-fashion" role="tabpanel" aria-labelledby="pills-fashion-tab">
+          <div class="row mb-3">
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+              <div class="card  h-100 border-0">
+                <div class="card-body p-0">
+                  <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+                  <div class="text-center deals_latest rounded">
+                    <img src="images/jewels.png" alt="Jewels" class="on_hover img-fluid rounded">
+
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Jewels</h3>
+                    <span class="fs-18 fw-600  text_black mt-3"><i
+                        class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+                  </div>
+
+                  <p class="text_black fs-12 mb-0">Organic and Certified</p>
+                  <span class="fs-12">
+                    <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                    (121)</span>
+                  <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                    Cart</button>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+              <div class="card  h-100 border-0">
+                <div class="card-body p-0">
+                  <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+                  <div class="text-center deals_latest rounded">
+                    <img src="images/chain.png" alt="Chain" class="on_hover img-fluid rounded">
+
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Chain</h3>
+                    <span class="fs-18 fw-600  text_black mt-3"><i
+                        class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+                  </div>
+
+                  <p class="text_black fs-12 mb-0">Organic and Certified</p>
+                  <span class="fs-12">
+                    <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                    (121)</span>
+                  <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                    Cart</button>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+              <div class="card  h-100 border-0">
+                <div class="card-body p-0">
+                  <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+                  <div class="text-center deals_latest rounded">
+                    <img src="images/heels.png" alt="Hells" class="on_hover img-fluid rounded">
+
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Heels</h3>
+                    <span class="fs-18 fw-600  text_black mt-3"><i
+                        class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+                  </div>
+
+                  <p class="text_black fs-12 mb-0">Organic and Certified</p>
+                  <span class="fs-12">
+                    <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                    (121)</span>
+                  <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                    Cart</button>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+              <div class="card  h-100 border-0">
+                <div class="card-body p-0">
+                  <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+                  <div class="text-center deals_latest rounded">
+                    <img src="images/shoes.png" alt="Shoes" class="on_hover img-fluid rounded">
+
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Shoes</h3>
+                    <span class="fs-18 fw-600  text_black mt-3"><i
+                        class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+                  </div>
+
+                  <p class="text_black fs-12 mb-0">Organic and Certified</p>
+                  <span class="fs-12">
+                    <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                    (121)</span>
+                  <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                    Cart</button>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+              <div class="card  h-100 border-0">
+                <div class="card-body p-0">
+                  <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+                  <div class="text-center deals_latest rounded">
+                    <img src="images/jewels.png" alt="Jewels" class="on_hover img-fluid rounded">
+
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Jewels</h3>
+                    <span class="fs-18 fw-600  text_black mt-3"><i
+                        class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+                  </div>
+
+                  <p class="text_black fs-12 mb-0">Organic and Certified</p>
+                  <span class="fs-12">
+                    <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                    (121)</span>
+                  <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                    Cart</button>
+
+                </div>
+              </div>
+
+            </div>
+            <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+              <div class="card  h-100 border-0">
+                <div class="card-body p-0">
+                  <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+                  <div class="text-center deals_latest rounded">
+                    <img src="images/chain.png" alt="Chain" class="on_hover img-fluid rounded">
+
+                  </div>
+                  <div class="d-flex justify-content-between">
+                    <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Chain</h3>
+                    <span class="fs-18 fw-600  text_black mt-3"><i
+                        class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+                  </div>
+
+                  <p class="text_black fs-12 mb-0">Organic and Certified</p>
+                  <span class="fs-12">
+                    <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                      class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                    (121)</span>
+                  <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                    Cart</button>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="pills-toys" role="tabpanel" aria-labelledby="pills-toys-tab">toys</div>
+        <div class="tab-pane fade" id="pills-education" role="tabpanel" aria-labelledby="pills-education-tab">Education
+        </div>
+        <div class="tab-pane fade" id="pills-beauty" role="tabpanel" aria-labelledby="pills-beauty-tab">Beauty</div>
+        <div class="tab-pane fade" id="pills-salon" role="tabpanel" aria-labelledby="pills-salon-tab">Salon</div>
+        <div class="tab-pane fade" id="pills-fitness" role="tabpanel" aria-labelledby="pills-fitness-tab">fitness</div>
+        <div class="tab-pane fade" id="pills-furniture" role="tabpanel" aria-labelledby="pills-furniture-tab">Furniture
+        </div>
+        <div class="tab-pane fade" id="pills-travel" role="tabpanel" aria-labelledby="pills-travel-tab">travel</div>
+      </div>
+    </div>
+  </section>
+  <!-- Best deals tab ends -->
+  <!-- cashback cards -->
+  <section class="mt-5">
+    <div class="container">
+      <div class="bg_cream rounded ">
+        <div class="row p-3 px-sm-3 py-sm-2 px-md-5 py-md-3">
+          <div class="col-12 col-sm-6 col-md-7 col-lg-6 col-xl-5 px-sm-5 py-sm-5">
+            <h2 class="fs-40 mb-2 text_black fw-600">Get 5% Cash Back </h2>
+            <p class="fs-13 text_black opacity-1 fw-600 mb-2">On shopcart.com</p>
+            <button class="btn btn_success mt-2 fs-12 shadow-none text-white">Learn More</button>
+          </div>
+          <div class="d-none d-lg-block col-lg-1"></div>
+          <div class="col-12 col-sm-6 d-none d-sm-block col-md-5 col-lg-5 px-5 py-5 px-xl-0 py-xl-0">
+            <div class="text-center ">
+              <img src="images/credit-cards.png" class="img-fluid credit-card" alt="credit-card">
+              <!-- <i class="fa-solid fa-credit-card credit-card text_lightgreen" style="font-size: 200px;"></i> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- cashback cards ends -->
+  <!-- most popular products -->
+  <section class="mt-5">
+    <div class="container">
+      <h2 class="fs-20 mb-4 text_black fw-600">Most Selling Products</h2>
+      <div class="row overflow-auto flex-nowrap mb-3">
+
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/chain.png" alt="Chain" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Chain</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/heels.png" alt="Hells" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Heels</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/shoes.png" alt="Shoes" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Shoes</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/jewels.png" alt="Jewels" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Jewels</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/chain.png" alt="Chain" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Chain</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/heels.png" alt="Hells" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Heels</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/shoes.png" alt="Shoes" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Shoes</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-3 mt-1">
+          <div class="card  h-100 border-0">
+            <div class="card-body p-0">
+              <i class="fa-regular fa-heart wishlist_icon fs-20"></i>
+              <div class="text-center deals_latest rounded">
+                <img src="images/jewels.png" alt="Jewels" class="on_hover img-fluid rounded">
+
+              </div>
+              <div class="d-flex justify-content-between">
+                <h3 class="fs-18 fw-600  text_black mt-3 mb-0">Jewels</h3>
+                <span class="fs-18 fw-600  text_black mt-3"><i class="fa-solid fa-dollar-sign fs-14"></i>59.00</span>
+              </div>
+
+              <p class="text_black fs-12 mb-0">Organic and Certified</p>
+              <span class="fs-12">
+                <i class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star text_lightgreen"></i><i class="fa-solid fa-star text_lightgreen"></i><i
+                  class="fa-solid fa-star-half-stroke text_lightgreen"></i>
+                (121)</span>
+              <button class="btn btn_cart fs-14 d-block opacity-1 mt-2 px-3 shadow-none fw-600 text_black">Add to
+                Cart</button>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- most popular products ends -->
+  <!-- trending products  -->
+  <section class="mt-5">
+    <div class="container">
+      <h2 class="fs-20 mb-4 text_black fw-600">Most Selling Products</h2>
+      <div class="owl-carousel owl-theme most-selling skipnext-buttons">
+        <div class="item active">
+          <div class="card h-100 border-0">
+            <div class="card-body p-0 bg_lightgrey rounded">
+              <div class="zoom-img">
+              <img
+                src="images/most-selling1.jpg"
+                alt="" class="img-fluid w-100 rounded-top">
+                </div>
+                <div class="p-4">
+                  <h2 class="fs-18 mb-2 text_black fw-600">Fashion World</h2>
+                  <p class="fs-13 fw-600 opacity-1">Delivery Within 24hours</p>
+                  <button class="btn btn_dark fs-12 shadow-none text-white">Learn More</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card h-100 border-0">
+            <div class="card-body p-0 bg_lightgrey rounded">
+              <div class="zoom-img">
+              <img
+                src="images/most-selling2.jpg"
+                alt="" class="img-fluid w-100 rounded-top">
+                </div>
+                <div class="p-4">
+                  <h2 class="fs-18 mb-2 text_black fw-600">Fashion World</h2>
+                  <p class="fs-13 fw-600 opacity-1">Delivery Within 24hours</p>
+                  <button class="btn btn_dark fs-12 shadow-none text-white">Learn More</button>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <div class="card h-100 border-0">
+            <div class="card-body p-0 bg_lightgrey rounded">
+              <div class="zoom-img">
+              <img
+                src="images/most-selling3.jpg"
+                alt="" class="img-fluid w-100 rounded-top">
+              </div>
+                <div class="p-4">
+                  <h2 class="fs-18 mb-2 text_black fw-600">Fashion World</h2>
+                  <p class="fs-13 fw-600 opacity-1">Delivery Within 24hours</p>
+                  <button class="btn btn_dark fs-12 shadow-none text-white">Learn More</button>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- trending products ends -->
+
+  <!-- Best Selling -->
+  <section class="mt-5">
+    <div class="container">
+      <h2 class="fs-22 mb-3 text_black fw-600">Best Selling Store</h2>
+      <div class="owl-carousel owl-theme best-selling skipnext-buttons">
+        <div class="item mb-4">
+          <div class="card border-0 h-100">
+            <div class="card-body p-0">
+              <img src="images/drone.jpg" alt="Staples" class="img-fluid rounded w-100">
+              <i class="fa-solid fa-cart-shopping icons icon_selling"></i>
+              <div class="ms-4">
+                <h3 class="fs-22 text_black fw-600 mb-0">Staples</h3>
+                <p class="fs-12 mb-0">Bag + Perfume</p>
+                <span class="fs-12 text_lightpink"><i class="fa-solid fa-tag me-2"></i>Delivery Within 24hours</span>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="item mb-4">
+          <div class="card border-0 h-100">
+            <div class="card-body p-0">
+              <img src="images/mobile-sell.jpg" alt="Staples" class="img-fluid rounded w-100">
+              <i class="fa-solid fa-truck-fast icons icon_selling"></i>
+              <div class="ms-4">
+                <h3 class="fs-22 text_black fw-600 mb-0  ">Now Delivery</h3>
+                <p class="fs-12 mb-0">Mobile + Gadgets</p>
+                <span class="fs-12 text_lightpink"><i class="fa-solid fa-tag me-2"></i>Delivery Within 24hours</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="item mb-4">
+          <div class="card border-0 h-100">
+            <div class="card-body p-0">
+              <img src="images/sunset.jpg" alt="Staples" class="img-fluid rounded w-100">
+              <i class="fa-brands fa-shopify icons icon_selling"></i>
+              <div class="ms-4">
+                <h3 class="fs-22 text_black fw-600 mb-0  ">Bevmo</h3>
+                <p class="fs-12 mb-0">Cosmetics + Makeup</p>
+                <span class="fs-12 text_lightpink"><i class="fa-solid fa-tag me-2"></i>Delivery Within 24hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="item mb-4">
+          <div class="card border-0 h-100">
+            <div class="card-body p-0">
+              <img src="images/sunset-p.jpg" alt="Staples" class="img-fluid rounded w-100">
+              <i class="fa-solid fa-cart-shopping icons icon_selling"></i>
+              <div class="ms-4">
+                <h3 class="fs-22 text_black fw-600 mb-0">Quicklly</h3>
+                <p class="fs-12 mb-0">Cosmetics + Makeup</p>
+                <span class="fs-12 text_lightpink"><i class="fa-solid fa-tag me-2"></i>Delivery Within 24hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Best Selling ends-->
+  <!-- Services -->
+  <section class="mt-5">
+    <div class="container">
+      <h2 class="fs-22 mb-3 text_black fw-600">Services To Help You Shop</h2>
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-4 mb-4">
+          <div class="card  border-0 h-100">
+            <div class="card-body p-4 pb-2 bg_lightgrey rounded-top">
+              <div class="">
+                <h2 class="fs-22 mb-3 text_black fw-600">Frequently asked questions</h2>
+                <p class="fs-14 fw-500 opacity-1">Updates on safe shopping in our stores</p>
+              </div>
+
+            </div>
+            <div class="zoom-img">
+              <img src="images/calling-img.jpg" class="img-fluid rounded-bottom" alt="Frequently asked questions">
+            </div>
+
+          </div>
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 mb-4">
+          <div class="card border-0 h-100">
+            <div class="card-body pb-2 p-4 bg_lightgrey rounded-top">
+              <div class="">
+                <h2 class="fs-22 mb-3 text_black fw-600">Online Payment Process</h2>
+                <p class="fs-14 fw-500 opacity-1">Updates on safe shopping in our stores</p>
+              </div>
+
+            </div>
+            <div class="zoom-img">
+              <img src="images/time-delivery.jpg" class="img-fluid  rounded-bottom" alt="Online payment">
+            </div>
+          </div>
+
+        </div>
+        <div class="col-12 col-md-4 col-lg-4 mb-4">
+          <div class="card border-0 h-100">
+            <div class="card-body pb-2 p-4 bg_lightgrey rounded-top">
+              <div class="">
+                <h2 class="fs-22 mb-3 text_black fw-600">Home Delivery Options</h2>
+                <p class="fs-14 fw-500 opacity-1">Updates on safe shopping in our stores</p>
+              </div>
+
+            </div>
+            <div class="zoom-img">
+              <img src="images/payment.jpg" class="img-fluid  rounded-bottom" alt="On time Delivery">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- footer top -->
+  <section class="mt-5 mb-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 col-lg-4 mt-3">
+          <a class="navbar-brand" href=""><img src="images/logo-i.svg" alt="logo" class="img-fluid mb-3"></a>
+          <p class="text_black fs-14 opacity-1 fw-500">Lorem ipsum dolor sit amet, consectetur adipisicing
+            elit. Itaque dolores
+            magni consectetur adipisicing elit? </p>
+          <h3 class="text_black fs-16 mt-4 mb-3 fw-600"> Accepted Payments</h3>
+          <div>
+
+            <i class="fa-brands fa-stripe border rounded p-1 fs-22 text_blue"></i>
+            <i class="fa-brands fa-cc-visa  border rounded p-1 fs-22 text_darkgreen"></i>
+            <i class="fa-brands fa-wordpress  border rounded p-1 fs-22"></i>
+            <i class="fa-brands fa-cc-mastercard border rounded p-1 fs-22 text_darkblue"></i>
+          </div>
+          <div class="mt-1">
+            <i class="fa-brands fa-stripe border rounded p-1 fs-22 text_blue"></i>
+            <i class="fa-brands fa-cc-visa  border rounded p-1 fs-22 text_darkgreen"></i>
+            <i class="fa-brands fa-wordpress  border rounded p-1 fs-22"></i>
+            <i class="fa-brands fa-cc-mastercard border rounded p-1 fs-22 text_darkblue"></i>
+
+          </div>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mt-3">
+          <h3 class="text_black fs-16 mb-3 fw-600"> Department</h3>
+          <ul class="list-unstyled fs-14 opacity-1 fw-500">
+            <li class="mb-1">
+              Fashion
+            </li>
+            <li class="mb-1">
+              Education product
+            </li>
+            <li class="mb-1">
+              Frozen Food
+            </li>
+            <li class="mb-1">
+              Bevarages
+            </li>
+            <li class="mb-1">
+              Organic grocery
+            </li>
+            <li class="mb-1">
+              Office supplies
+            </li>
+            <li class="mb-1">
+              Beauty Products
+            </li>
+            <li class="mb-1">
+              Books
+            </li>
+            <li class="mb-1">
+              Travel Accessories
+            </li>
+            <li class="mb-1">
+              Fitness
+            </li>
+            <li class="mb-1">
+              Sneakers
+            </li>
+            <li class="mb-1">
+              Toys
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mt-3">
+          <h3 class="text_black fs-16 mb-3 fw-600"> About Us</h3>
+          <ul class="list-unstyled fs-14 opacity-1 fw-500">
+            <li class="mb-1">
+              About Shopcart
+            </li>
+            <li class="mb-1">
+              Careers
+            </li>
+            <li class="mb-1">
+              News & blog
+            </li>
+            <li class="mb-1">
+              Bevarages
+            </li>
+            <li class="mb-1">
+              Organic grocery
+            </li>
+            <li class="mb-1">
+              Books
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mt-3">
+          <h3 class="text_black fs-16 mb-3 fw-600">Services</h3>
+          <ul class="list-unstyled fs-14 opacity-1 fw-500">
+            <li class="mb-1">
+              Gift Card
+            </li>
+            <li class="mb-1">
+              Mobile app
+            </li>
+            <li class="mb-1">
+              Shipping & Delivery
+            </li>
+            <li class="mb-1">
+              Order pickup
+            </li>
+            <li class="mb-1">
+              Account
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-6 col-md-4 col-lg-2 mt-3">
+          <h3 class="text_black fs-16 mb-3 fw-600"> Help</h3>
+          <ul class="list-unstyled fs-14 opacity-1 fw-500">
+            <li class="mb-1">
+              About Shopcart
+            </li>
+            <li class="mb-1">
+              Careers
+            </li>
+            <li class="mb-1">
+              News & blog
+            </li>
+            <li class="mb-1">
+              Bevarages
+            </li>
+            <li class="mb-1">
+              Organic grocery
+            </li>
+            <li class="mb-1">
+              Books
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <!-- footer top ends-->
+
+  <footer>
+    <div class="container">
+      <hr>
+      <div class="row mb-4">
+        <div class="col-12 col-md-6 col-lg-4 mt-3 text-center text-md-start">
+          <i class="fa-solid fa-street-view me-2 text_lightpink"></i><span
+            class="opacity-1 fw-500 fs-12 me-2 me-md-4 me-lg-4">Become Seller
+          </span>
+          <i class="fa-solid fa-gift me-2 text_lightpink"></i><span
+            class="opacity-1 fw-500 fs-12 me-2 me-md-4 me-lg-4">Gift card </span>
+          <i class="fa-regular fa-circle-question me-2 text_lightpink"></i><span class="opacity-1 fw-500 fs-12">Help
+            center
+          </span>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4 text-center text-lg-end mt-3">
+          <span class="opacity-1 fw-500 fs-12 me-2 me-md-4 me-lg-4">Terms of Use</span>
+          <span class="opacity-1 fw-500 fs-12 ">Privacy Policy</span>
+        </div>
+        <div class="col-12 col-md-12 col-lg-4 text-center text-lg-end mt-3">
+          <span class="opacity-1 fw-500 fs-12">All Right Reserved by Musemind |2023</span>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+  <!-- Carousel starts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <!-- Carousel ends -->
+
+  <script src="script.js"></script>
+  <!-- aos animation -->
+  <script>AOS.init({
+      duration: 1200,
+    })
+  </script>
+  <!-- aos animation -->
+</body>
+
+</html>

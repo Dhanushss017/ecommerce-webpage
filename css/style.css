@@ -1,0 +1,249 @@
+body {
+    font-family: "cabin", sans-serif;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "cabin-bold", sans-serif;
+}
+
+@font-face {
+    font-family: cabin-bold;
+    src: url(../mozaicq/fonts/Cabin-Bold.ttf)
+}
+
+@font-face {
+    font-family: cabin;
+    /* src: url(../mozaicq/fonts/Cabin-Regular.ttf); */
+    src: url(../mozaicq/fonts/Cabin-Medium.ttf)
+}
+
+.search_input {
+    border-radius: 17px;
+    background-color: #f5f5f57a;
+}
+
+/* text color */
+.text_blue {
+    color: blue;
+}
+
+.text_darkgreen {
+    color: #1e4c1e;
+}
+
+.text_darkblue {
+    color: darkblue;
+}
+
+.text_lightpink {
+    color: #c75a6a;
+}
+
+.text_green {
+    color: #192b19;
+}
+
+.text_lightgreen {
+    color: green;
+}
+
+.text_lightblue {
+    color: #68b0c7;
+}
+
+.text_lightyellow {
+    color: #ffb20c;
+}
+
+.bg_lightgrey {
+    background-color: #f5f5f5;
+}
+
+.bg_lightblue {
+    background-color: #c4dee6;
+}
+
+.bg_lightyellow {
+    background-color: #e6c999;
+}
+
+.bg_darkgreen {
+    background-color: #193e10;
+}
+
+.bg_cream {
+    background-color: #e0cfb5;
+}
+
+.on_hover:hover {
+    transform: scale(0.8);
+    transition: transform 1s;
+}
+
+.icon_position {
+    position: relative;
+    bottom: 4%;
+    left: 4%;
+}
+
+.icons {
+    background-color: #ad2222;
+    width: 45px;
+    height: 45px;
+    font-size: 24px;
+    border-radius: 25px;
+    text-align: center;
+    line-height: 1.8 !important;
+    color: white;
+}
+
+.icon_selling {
+    position: relative;
+    bottom: 20px;
+    left: 4%;
+}
+
+.navbar_show .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0px;
+}
+
+.banner_text {
+    position: absolute;
+    left: 7%;
+    top: -372px;
+}
+
+.btn_success {
+    background-color: #1e4c1e;
+    border-radius: 20px;
+}
+
+.top_categories {
+    position: absolute;
+    width: 100%;
+    top: 3%;
+}
+
+.wishlist_icon {
+    position: absolute;
+    right: 3%;
+    top: 3%;
+}
+
+.wishlist_icon {
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+    line-height: 1.2 !important;
+    text-align: center;
+    color: #878686;
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+.btn_cart {
+    background-color: transparent;
+    border-radius: 20px;
+    border: 1px solid #a2a2a2;
+}
+
+.btn_cart:hover {
+    background-color: #1e4c1e;
+    color: white !important;
+    opacity: 1;
+}
+
+.deals_latest {
+    background-color: rgb(244, 244, 246);
+}
+
+.choose_brand {
+    background-color: #f5f5f5;
+}
+
+.grid_column {
+    display: grid;
+    column-gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.choose_brand:hover {
+    border: 2px solid #b6b0b0;
+}
+
+.cash-back-text {
+    position: absolute;
+    right: 5%;
+    margin-top: 9%;
+}
+
+.zoom-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.zoom-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all .3s ease;
+}
+
+.zoom-img img:hover {
+    transform: scale(1.3);
+}
+
+.btn_buy {
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+}
+
+.btn_buy:hover {
+    background-color: white;
+}
+
+.scrollbar_none::-webkit-scrollbar {
+    display: none;
+}
+
+.scrollbar_none {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+.nav_tabs .nav-link {
+    background-color: white;
+    border: 1px solid #b6b0b0;
+    border-radius: 20px;
+}
+
+.nav_tabs .nav-link.active {
+    background-color: #1e4c1e;
+    color: white !important;
+
+}
+.credit-card:hover{
+transform: scale(1.13) rotate(-15deg);
+transition: all 0.4s;
+}
+.btn_dark {
+    background-color: black;
+    border-radius: 20px;
+}
+.skipnext-buttons button.owl-prev, 
+.skipnext-buttons button.owl-next{
+    background-color: black !important;
+    height: 28px;
+    width: 28px;
+    border-radius: 50% !important;
+    color: white !important;
+    font-size: 25px !important;
+    line-height: 0 !important;
+}
